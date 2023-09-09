@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Status</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+      <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+     <div class="forMargin">
+      <p> Your current orders: </p>
+	<ol>
+         <li> June 12th - $34.00 </li>
+	<li> May 27th - $34.00 </li>
+	<li> May 11th - $34.00 </li>
+        </ol>
+    </div>
+    <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <h3>My Cart</h3>
+      <div id="allcartItems">
+       <div id="displayedHotelDetails">
+       </div>
+      <div id="displayedFlightDetails">
+        </div>
+      <div id="displayedRentalCarDetails">
+        </div>
+      <div id = "totalPrice">
+      </div>
+      <div >
+        <button id = "placeOrder" >Place Order</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="datetime"></div>
+    <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+    <img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+  </footer>
+ <script src="cart_script.js"></script>
+
+</body>
+</html>

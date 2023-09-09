@@ -1,0 +1,191 @@
+/* CSS for the layout */
+
+html, body {
+  height: 100%;
+
+}
+
+html{
+  background-image: url("footer1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+header{
+font-family:Gabriola;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+}
+
+.heading{
+ flex:1;
+ display: flex;
+ height:100px;
+ 
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.side {
+  width: 20%;
+ background-color: #f7f7f7;
+ position: relative;
+}
+
+.toggle-bg-color{
+ position:absolute;
+ bottom: 0;
+}
+.main-content {
+  width: 80%;
+background-color: #fdfcf6;
+
+}
+.forImg{
+ width:8%;
+ margin-top:0px;
+ margin-bottom:0px;
+  margin-left:0px;
+ margin-right:0px;
+}
+.forCenter{
+width:92%;
+   display: flex;
+  justify-content: center;
+}
+
+.forMargin{
+ margin-left:10px;
+}
+.up{
+float:left;
+}
+
+.down{
+clear:left
+}
+.pm{
+ float:right;
+ border: 7px solid yellow;
+ position: relative;
+ margin-right:15px;
+  margin-top:20px;
+opacity:0.8;
+}
+/* CSS properties using in mystyle.css */
+
+/* Example properties: */
+
+h1 {
+  text-align: center; 
+  text-shadow: 2px 2px #FF0000;
+  visibility : visible;
+}
+
+nav {
+ background-color: #dcf8fa;
+  padding: 10px;
+display: flex;
+justify-content: center;
+border-width:2px;
+border-style:solid;
+border-color:black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+display:flex;
+justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+padding:10px;
+
+}
+
+li a:hover{
+ background-color: #cacecf;
+}
+
+footer {
+  text-align: center;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top: 2px;
+  padding-bottom:0px;
+  background-color: #dcf8fa;
+  margin-top: auto;
+  background-image: url("footer1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+  display:flex;
+  justify-content: space-between;
+   
+}
+
+h1, h3, p, a {
+  color: #333333;
+}
+
+
+p{
+  font-size: 17px;
+ font-style: normal;
+ font-weight: normal;
+ vertical-align:0px;
+ /* horizontal-align:0px; */
+}
+
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: brown;
+}
+
+.error {
+  color: red;
+}
+
+/* //======================================================== */
+
+#question-container {
+  display: none;
+}
+
+#result-container {
+  display: none;
+}
+
+#next-button, #skip-button {
+  margin-top: 10px;
+}
+
+/* Add more CSS properties as per your requirements */

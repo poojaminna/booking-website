@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+       <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+    <div class="forMargin">
+        <p> Our Locations: </p>
+	<dl>
+  	<dt>India:</dt>
+  	<dd>Hyderabad, Bangalore, Delhi</dd>
+  	<dt>USA:</dt>
+  	<dd>Texas, California, Nevada</dd>
+        </dl>
+    </div>
+   <button id="toggle-bg-color" >Toggle Background</button>
+   </div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <h3>Contact Us</h3>
+      <p>Get in touch with us for any inquiries or assistance.</p>
+  
+   <form id="form" onsubmit="validateForm(event)">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+    </div>
+
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+    </div>
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required>
+    </div>
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" required></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+	<button id="jsonButton">JSON</button>
+    </div>
+  </div>
+
+  <footer>
+    <div id="datetime"></div>
+    <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+    <img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

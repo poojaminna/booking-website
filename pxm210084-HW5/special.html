@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Special Offer</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+      <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+    <div class="forMargin">
+      <!-- Content for the side section -->
+      <h3>New user offers</h3>
+  
+  <div class ="up">
+    <p>British Airways</p>
+  </div>
+
+  <div class= "down">
+    
+    <p>American Airlines</p>
+  </div>
+  <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+ </div>
+    <div class="main-content">
+    <button onclick="toggleQuestion()" id="specialButton">Take quiz to avail offers</button>
+     <div id="searchForm" style="display: none;" >
+    <h2 id="question-text"></h2>
+    <div id="answer-options">
+      <input type="radio" name="answer" id="option1" value="Yes" autocomplete="off">
+      <label for="option1" id="option1-label"></label><br>
+      <input type="radio" name="answer" id="option2" value="No" autocomplete="off">
+      <label for="option2" id="option2-label"></label><br>
+    </div>
+    <button id="next-button" onclick="nextQuestion()">Next</button>
+    <button id="skip-button" onclick="skipQuestion()">Skip</button>
+  </div>
+
+  <div id="result-container">
+    <div id="time-taken"></div>
+
+    <h2 id="result-heading"></h2>
+    <p id="result-text"></p>
+    <div id="controls">
+    
+    <button id="increase-font-size">Increase Font Size</button>
+    <button id="decrease-font-size">Decrease Font Size</button>
+  </div>
+  </div>
+
+  
+    </div>
+  </div>
+
+  <footer>
+     <div id="datetime"></div>
+  <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+<img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>

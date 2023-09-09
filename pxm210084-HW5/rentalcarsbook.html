@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rental Car Booking</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+      <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+      <!-- Content for the side section -->
+      <div class="forMargin">
+      <h3>Popular Car Models</h3>
+
+      <div class ="up">
+      
+        <p>BMW</p>
+      </div>
+
+      <div class ="down">
+        <p>Audi</p>
+      </div>
+
+      <h3>Popular Locations</h3>
+
+      <ul>
+        <li><a href="location1.html">Location 1</a></li>
+        <li><a href="location2.html">Location 2</a></li>
+        <li><a href="location3.html">Location 3</a></li>
+      </ul>
+      <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+</div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <h3>Welcome to rental car booking!</h3>
+      <h3>Find your perfect rental car here</h3>
+      <p>Enter your rental details here</p>
+      
+         <form id="rentalCars-form">
+       <div>
+        <label for="city">City:</label>
+	<input type="text" id="city" required>
+       </div>
+       <div>
+	<label for="checkInDate">Check-In Date:</label>
+	<input type="date" id="checkInDate" required>
+       </div>
+       <div>
+        <label for="checkOutDate">Check-Out Date:</label>
+        <input type="date" id="checkOutDate" required>
+       </div>
+      <input type="submit" value="Search">
+      </form>	
+
+      <button onclick="toggleForm()">Choose Rental car company</button>
+ <p id="displayedRentalCar"></p>
+<div id="searchForm" style="display: none;">
+  <h2>Company Search</h2>
+  <form>
+    <label for="rentalCar">Choose a rental car company:</label>
+    <select id="rentalCar" required>
+      <option value="">Select</option>
+      <option value="Hopper">Hopper</option>
+      <option value="Audi Plano">Audi Plano</option>
+      <option value="Auto plans">Auto plans</option>
+      <option value="Not Selected">None</option>
+      <!-- Add hotel options here -->
+    </select>
+
+  </form>
+     
+    </div>
+
+<table id="rentalCarsTable">
+  
+</table>
+<div class="cart">
+<span id = "cart-rentalCar">
+</span>
+</div>
+<button id="showExistingRentalCars">Show existing Rental Cars</button>
+<table id="existingRentalCarsTable">
+  
+</table>
+
+  </div>
+</div>
+  <footer>
+    <div id="datetime"></div>
+     <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre><img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+    
+  </p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Status</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+      <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+     <div class="forMargin">
+      <p> Your current orders: </p>
+	<ol>
+         <li> June 12th - $34.00 </li>
+	<li> May 27th - $34.00 </li>
+	<li> May 11th - $34.00 </li>
+        </ol>
+    </div>
+    <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <!-- <h3>Order Status</h3> -->
+      <!-- <table>
+        <tr>
+          <td>Hotel</td>
+          <td>Flight</td>
+          <td>Rental Car</td>
+        </tr>
+        <tr>
+        <td id="displayedHotel"></td> 
+        
+        <td id="displayedFlight"></td> 
+        
+        <td id="displayedRentalCar"></td> 
+        </tr>
+      </table> -->
+
+
+    <h2>Order Status</h2>
+    <div id="carBookings">
+        <h3>Car Bookings</h3>
+        <table>
+            <tr>
+                <th>BookID</th>
+                <th>carID</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="flightBookings">
+        <h3>Flight Bookings</h3>
+        <table>
+            <tr>
+                <th>BookID</th>
+                <th>flightID</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="hotelBookings">
+        <h3>Hotel Bookings</h3>
+        <table>
+            <tr>
+                <th>BookID</th>
+                <th>hotelID</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+    
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="datetime"></div>
+    <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+    <img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+  </footer>
+ <script src="script.js"></script>
+ <script src="order_status.js"></script>
+</body>
+</html>

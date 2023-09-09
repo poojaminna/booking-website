@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1> 
+    
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+      <li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+    <div class="forMargin">
+      <!-- Content for the side section -->
+      <h3>Featured Flights</h3>
+  
+  <div class ="up">
+    <p>British Airways</p>
+  </div>
+
+  <div class= "down">
+    
+    <p>American Airlines</p>
+  </div>
+
+  <h3>Popular Destinations</h3>
+  
+  <ul>
+    <li><a href="destination1.html">Destination 1</a></li>
+    <li><a href="destination2.html">Destination 2</a></li>
+    <li><a href="destination3.html">Destination 3</a></li>
+  </ul>
+
+   <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+ </div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <h3>Welcome to flight booking!</h3>
+      <h3>Find your perfect Flight here</h3>
+      <p>Enter your travel dates here</p>
+      <!-- action="get_search_flights.php" method="post" -->
+<form id="flight-form" >
+   <div>
+     <label for="tripType">Trip Type:</label>
+<select id="tripType" onchange="handleTripType()">
+  <option value="oneWay">One Way</option>
+  <option value="roundTrip">Round Trip</option>
+</select>
+  </div>
+   <div>
+    <label for="departure">Departure:</label>
+    <input type="text" id="departure" name="departure" required>
+   </div>
+  <div>
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" name="destination" required>
+
+   </div>
+
+<div id="departureSection">
+  <label for="departureDate">Departure Date:</label>
+  <input type="date" id="departureDate" required>
+</div>
+
+<div id="returnSection" style="display: none;">
+  <label for="returnDate">Return Date:</label>
+  <input type="date" id="returnDate" >
+</div>
+
+
+<div id="passengerIcon" onclick="togglePassengerForm()">
+  <i class="fa fa-user"></i> Passenger
+</div>
+
+<div id="passengerForm" style="display: none;">
+  <label for="adults">Adults:</label>
+  <input type="number" id="adults" min="0" value="0">
+
+  <label for="children">Children:</label>
+  <input type="number" id="children" min="0" value="0">
+
+  <label for="infants">Infants:</label>
+  <input type="number" id="infants" min="0" value="0">
+</div>
+
+<input type="submit" value="Search">
+
+</form>
+<button onclick="toggleForm()">Choose flight company</button>
+ <p id="displayedFlight"></p>
+<div id="searchForm" style="display: none;">
+  <h2>Flight Search</h2>
+  <form >
+    <label for="flight">Choose a flight:</label>
+    <select id="flight" required>
+      <option value="">Select</option>
+      <option value="Emirates">Emirates</option>
+      <option value="American Airlines">American Airlines</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Not Selected">None</option>
+      <!-- Add hotel options here -->
+    </select>
+
+</form>
+</div>
+<div id="test"> </div>
+
+<table id="flightsTable">
+  
+</table>
+<div class="cart">
+  <span id = "cart-flight">
+  </span>
+  </div>
+<table id="flightsTable-return">
+  
+</table>
+<div class="cart">
+  <span id = "cart-flight-2">
+  </span>
+  </div>
+
+
+<button id="showExistingFlights" >Show existing flights</button>
+<!-- //onclick="showExistingFlights()" -->
+<table id="existingFlightsTable">
+  
+</table>
+    </div>
+  </div>
+
+  <footer>
+     <div id="datetime"></div>
+  <p> 
+    
+    <pre>
+	
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+<img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+ 
+  </footer>
+ <script src="script.js"></script>
+ <script src="script1.js"></script>
+</body>
+</html>

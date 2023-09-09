@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+    <div class="forImg">
+    <img src="sunset.jpg" alt="logo"  width = 100% height=100%>
+    </div>
+    <div class="forCenter">
+    <h1>YourTrip.com</h1>
+    </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="rentalcarsbook.html">Rental Cars</a></li>
+      <li><a href="orderstatus.html">Order Status</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="special.html">Special</a></li>
+	<li><a href="myCart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="side">
+     <div class="forMargin">
+      <!-- Content for the side section -->
+      <h3>Featured Hotels</h3>
+
+      <div class ="up">
+        <p>Hilton Group</p>
+      </div>
+
+      <div class ="down">
+        
+        <p>Sunset Station Resort</p>
+      </div>
+
+      <h3>Popular Destinations</h3>
+
+      <ul>
+        <li><a href="destination1.html">Destination 1</a></li>
+        <li><a href="destination2.html">Destination 2</a></li>
+        <li><a href="destination3.html">Destination 3</a></li>
+      </ul>
+
+      <button id="toggle-bg-color" >Toggle Background</button>
+    </div>
+</div>
+    <div class="main-content">
+      <!-- Content for the main content section -->
+      <h3>Welcome to hotel booking!</h3>
+      <h3>Find your perfect hotel here</h3>
+      <p>Enter your travel details here</p>
+      <!-- onSubmit="validateDates()" -->
+      <form  id="hotel-form">
+       <div>
+        <label for="city">City:</label>
+	<input type="text" id="city" required>
+       </div>
+       <div>
+	<label for="checkInDate">Check-In Date:</label>
+	<input type="date" id="checkInDate" required>
+       </div>
+       <div>
+        <label for="checkOutDate">Check-Out Date:</label>
+        <input type="date" id="checkOutDate" required>
+       </div>
+      <input type="submit" value="Search">
+      </form>	
+
+      <button onclick="toggleForm()">Choose hotel</button>
+ <p id="displayedHotel"></p>
+
+<div id="searchForm" style="display: none;">
+  <h2>Hotel Search</h2>
+  <form >
+    <label for="hotel">Choose a hotel:</label>
+    <select id="hotel" required>
+      <option value="">Select</option>
+      <option value="Sunset Station">Sunset station</option>
+      <option value="Hilton">Hilton</option>
+      <option value="Taj Vivanta">Taj Vivanta</option>
+      <option value="Not Selected">None</option>
+      <!-- Add hotel options here -->
+    </select>
+
+  
+  </form>
+</div>
+
+<table id="hotelsTable">
+  
+</table>
+<div class="cart">
+<span id = "cart-hotel">
+</span>
+</div>
+<!-- onclick="showExistingHotels()" -->
+<button id="showExistingHotels">Show existing hotels</button>
+<table id="existingHotelsTable">
+  
+</table>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="datetime"></div>
+    <p> 
+    <pre>
+    	First Name : Pooja
+	Last Name: Minna Ravindra
+	Net ID: pxm210084
+	Course Number: CS 6314
+	Section Number 5U1 
+    </pre>
+    <img class="pm" src="pm_logo.png" alt="pooja minna logo" width=50px height=50px>
+  </p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
